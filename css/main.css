@@ -1,0 +1,73 @@
+/* al body le cambiamos la letra,letra color blanco,le damos fondo negro,*/
+/*margin y paddin pega todo al borde de la pantalla*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    }
+header{
+    font-family: 'Times New Roman', Times, serif;
+    color:#000;
+    border-top: solid 6px #000;
+    display:flex;
+    background-color:#fff;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    }
+.logo{
+    display: flex;
+   }
+.logo img{
+    height: 80px;
+}
+/* para quitarle a los links el subrayado y le damos color*/
+a{
+    text-decoration: none;
+    color: #000;
+}
+/*a los link del header le damos negrita y los corremos con right*/
+nav a{
+    font-weight: 600;
+    padding-right: 35px;
+}
+/* para que cambien de color los link al pasar el cursor por encima*/
+nav a:hover{
+    color:rgba(221, 12, 23, 0.966);
+    
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.row a{
+    color:#fff;
+}
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.column{
+    flex:25%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 5px;
+}
+@media (max-width:800px){
+        .column{
+            flex:50%;
+        }
+}
+@media (max-width:600px){
+    .column{
+        flex:100%;
+       
+    }
+}
